@@ -1,0 +1,7 @@
+name: ServerInfo
+version: '${project.version}'
+main: io.github.lamberkeep.serverinfo.ServerInfo
+api-version: 1.18
+authors: [ LamberKeep ]
+description: Adds information messages to you server.
+website: LamberKeep.github.io

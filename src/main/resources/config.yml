@@ -1,0 +1,6 @@
+# Supports vanilla minecraft "&<color_code>", but not HEX codes yet.
+# To get new MOTD line use "\n".
+motds:
+  - "&cHello\nworld"
+  - "&eAnother message"
+  - "&aAnd another message"
