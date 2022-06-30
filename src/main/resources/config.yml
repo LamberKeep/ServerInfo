@@ -1,6 +1,16 @@
-# Supports vanilla minecraft "&<color_code>", but not HEX codes yet.
-# To get new MOTD line use "\n".
+# Supports vanilla minecraft "&<color_code>", but not HEX codes yet. To get line line use "\n".
+
+# MOTD updated each time the player refreshes the server list.
 motds:
   - "&cHello\nworld"
   - "&eAnother message"
   - "&aAnd another message"
+
+# Automatic messages from the server with a specified delay.
+messages:
+  enabled: true
+  delay: 5 # in minutes
+  list:
+    - "&c[Info] &aMessage 1"
+    - "&c[Info] &eMessage 2"
+    - "&c[Info] &bMessage 3"

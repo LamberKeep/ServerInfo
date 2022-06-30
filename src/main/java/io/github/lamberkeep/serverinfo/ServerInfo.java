@@ -1,6 +1,7 @@
 package io.github.lamberkeep.serverinfo;
 
 import io.github.lamberkeep.serverinfo.listener.ServerListPingEvent;
+import io.github.lamberkeep.serverinfo.task.ChatMessages;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
@@ -22,6 +23,8 @@ public final class ServerInfo extends JavaPlugin {
 
         saveDefaultConfig();
         config = getConfig();
+
+        if (config.getBoolean("messages.enabled")) {new ChatMessages();}
 
         Bukkit.getLogger().log(Level.INFO, "I'm ready!");
     }
